@@ -3,7 +3,16 @@
     padding: 0;
 }
 
-header {
+footer {
+    height: 100%;
+}
+/* footer {
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
+
+/* header {
     height: 100%;
 
 }
@@ -161,20 +170,54 @@ header label:hover {
 .button:hover {
     height: 50px;
     width: 100px;
+} */
+
+.fondo-nav{
+
+    text-transform: uppercase;
+    background-color: #a39590;
 }
 
+.jumbotron{
+    background-image: url(../assets/img/centro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    text-shadow: 1px 1px 3px #a39590;
+    border-radius: 0%;
+    margin-bottom: 0%;
+}
 
+.jumbotron h2 {
+    font-size: 35px;
+}
+
+.jumbotron h3 {
+    font-size: 25px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+}
+
+.btn {
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* fin de inicio */
 
 /* footer */
 
 footer {
-    padding-top: 5%;
+    padding-top: 30px;
     position: absolute;
     width: 100%;
-    height: 60px;
-    background-image: linear-gradient(#91837d , #e0bfda);
-    background-image: linear-gradient(to bottom , #91837d ,  #e0bfda);
+    height: 120px;
+    background-color: #a39590;
     color: black;
+
+
 }
 
 .copyright {
@@ -183,8 +226,7 @@ footer {
     right: 0%;
     width: 100%;
     text-align: center;
-    font-size: 15px;
-    padding-bottom: 1%;
+    font-size: 13px;
     color: rgb(7, 4, 4);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -199,60 +241,56 @@ footer {
     display: inline-block;
     width: 9%;
     position: relative;
-    font-size: 5px;
+    font-size: 3px;
+    padding-top: 20px;
 }
 
 .facebook {
     display: inline-block;
     width: 9%;
     position: relative;
-    font-size: 5px;
+    font-size: 3px;
+    padding-top: 20px;
 }
 .whatsapp {
     display: inline-block;
     width: 9%;
     position: relative;
-    font-size: 5px;
+    font-size: 3px;
+    padding-top: 20px;
 }
 
 /* quienes somos */
-.sandrayblanca {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    flex-wrap: wrap;
 
-}
-
-.presentacion {
-    display: block;
-    line-height: 30px;
-    margin-top: 40px;
-    padding: 60px;
-    margin-bottom: 8%;
-    font-family: 'Poppins', sans-serif;
-}
-
-.quienessomos {
+.nosotros {
+    height: 500px;
     width: 100%;
-    display: flex;
 }
 
+.row {
+    height: 500px;
+}
 .nleft {
-    height: 40px;
-    width: 50%;
-    background-size: cover;
-
+    background-image:url(../assets/img/womensandra.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.titulosecciones {
+.nright h3 {
     text-align: center;
     color: rgb(122, 120, 120);
     font-size: 30px;
     text-transform: uppercase;
     margin-top: 5%;
     text-align: center;
+
 }
+
+.nright p {
+    line-height: 30px;
+
+}
+
 
 /* servicios */
 
@@ -298,19 +336,6 @@ footer {
     font-weight: 300;
 }
 
-.footerservicios {
-    margin-bottom: 0;
-    padding-top: 5%;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(122, 120, 120);
-    color: black;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-
-}
-
 /* recomendaciones */
 
 .tips{
@@ -338,17 +363,6 @@ footer {
     margin-bottom: 5%;
 }
 
-.footerrecomendaciones {
-    margin-bottom: 0;
-    padding-top: 5%;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(122, 120, 120);
-    color: black;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
 /* formulario */
 
 .registro {
@@ -385,53 +399,3 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-
-
-@media only screen and (max-width:850px) {
-
-    header label {
-        display: block;
-        padding: 5%;
-        margin-bottom: 5%;
-    }
-
-    .menu {
-        position: absolute;
-        background: #aaa3a0;
-        width: 90%;
-        margin-left: -90%;
-        transition: all 0.5s;
-    }
-
-    .menu ul {
-        flex-direction: column;
-    }
-
-    .menu li {
-        border-top: 1px solid rgb(218, 208, 208);
-    }
-
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-    }
-
-    .img-primera {
-        width: 100%;
-        height:10%;
-        grid-column: 2/6;
-    }
-
-    .titulos {
-        grid-column: 2/3;
-        text-align: left;
-    }
- 
-
-    .sandrayblanca {
-        display: flex;
-        flex-direction: row;
-        display: grid;
-    
-    }
-}
