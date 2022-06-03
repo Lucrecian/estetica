@@ -3,182 +3,15 @@
     padding: 0;
 }
 
-footer {
-    height: 100%;
-}
-/* footer {
-    height: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
+/* inicia index */
 
-
-/* header {
-    height: 100%;
-
-}
-
-body {
-    height: 100%;
-}
-
-footer {
-    height: 100%;
-}
-
-#btn-menu {
-    display: none;
-}
-
-header label {
-    display: none;
-    width: 5px;
-    height: 5px;
-    padding: 1px;
-}
-header label:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
-} 
-
-
-.menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    height: 20%;
-}
-
-.menu li:hover {
-    background: rgb(122, 120, 120);
-
-}
-
-.menu li a {
-    display: block;
-    padding: 20px 25px;
-    color: #91837d;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-}
-
-.logo {
-    float: left ;
-    margin-left: 1%;
-    text-align: left;
-    font-size: 30px;
-    letter-spacing: 5px;
-    padding: 3px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-    position: relative;
-    top: 10px;
-
-} 
-
-
-.grid {
-    width: 100%;
-    max-width: 1500px;
-    height: 10;
-    overflow: hidden;
-    align-items: center;
-    height: 500px;
-    background-color: #a39590; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: grid;
-    grid-template-columns: repeat(12, 1rf);
-    grid-template-rows: 200px 200px 100px 100px;
-} 
-
-
-.weight-150 { 
-    font-weight: 150;
-}
-
-.weight-50 {
-    font-weight: 50;
-}
-
-.img-primera {
-    width: 100%;
-    height:10%;
-    grid-column: 8/13;
-}
-.titulos {
-    grid-column: 2/6;
-    padding: 20px;
-    padding-right: 10px;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 1.2;
-    word-spacing: 1px;
-}
-
-.animacion{
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-delay: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-@keyframes aparecer {
-0%{
-    opacity: 0;
-}
-100%{
-    opacity: 1;
-}
-}
-
-.parrafo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    grid-column: 2/6;
-    transform: translate(1px, 10px);
-
-}
-
-.button {
-    background-color: #bbaea8;
-    border-color: #a2877c;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 200;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color .15s;
-    transform: translate(200px, 50px);
-}
-.button {
-    transition: height 3.5s, width 3.5s;
-}
-
-.button:hover {
-    height: 50px;
-    width: 100px;
-} */
-
-.fondo-nav{
+.fondo-nav {
 
     text-transform: uppercase;
     background-color: #a39590;
 }
 
-.jumbotron{
+.jumbotron {
     background-image: url(../assets/img/centro.jpg);
     background-size: cover;
     background-position: center;
@@ -189,23 +22,65 @@ header label:hover {
 }
 
 .jumbotron h2 {
-    font-size: 35px;
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .jumbotron h3 {
-    font-size: 25px;
+    font-size: 20px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .jumbotron p {
-    font-size: 20px;
+    font-size: 15px;
 }
+
+
 
 .btn {
     text-transform: uppercase;
     line-height: 1.5;
+    text-decoration: none;
+    color: #a39590;
+
+
 }
 
-/* fin de inicio */
+
+.btn:hover {
+    color: #725166;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
 
 /* footer */
 
@@ -252,6 +127,7 @@ footer {
     font-size: 3px;
     padding-top: 20px;
 }
+
 .whatsapp {
     display: inline-block;
     width: 9%;
@@ -263,15 +139,16 @@ footer {
 /* quienes somos */
 
 .nosotros {
-    height: 500px;
+
     width: 100%;
 }
 
 .row {
     height: 500px;
 }
+
 .nleft {
-    background-image:url(../assets/img/womensandra.png);
+    background-image: url(../assets/img/higene.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -287,12 +164,24 @@ footer {
 }
 
 .nright p {
-    line-height: 30px;
-
+    line-height: 25px;
+    margin-bottom: 0%;
+    text-align: center;
 }
 
 
 /* servicios */
+
+.titulosecciones {
+
+    text-align: center;
+    color: rgb(122, 120, 120);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 5%;
+    text-align: center;
+
+}
 
 .container {
     width: 100%;
@@ -302,7 +191,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    
+
 }
 
 .container .card {
@@ -338,8 +227,7 @@ footer {
 
 /* recomendaciones */
 
-.tips{
-    text-align: center;
+.tips {
     color: rgb(122, 120, 120);
     font-weight: 100%;
     font-size: 30px;
@@ -357,7 +245,6 @@ footer {
     margin-bottom: 100px;
     margin-right: 60px;
     margin-left: 60px;
-    width: 90%;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -374,7 +261,7 @@ footer {
     margin-top: 30px;
     border-radius: 4px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .tituloregistro {
@@ -398,4 +285,3 @@ footer {
     width: 105%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
